@@ -1,0 +1,18 @@
+
+[[instance]]
+interval = '10m'
+
+    [instance.notifier]
+    notifier = 'discord_webhook'
+    url = ''
+    username = 'ChangeScape'
+    content = '<@userid> <@&roleid>'
+
+    [instance.scraper]
+    scraper = 'gruv'
+    category = '4k_ultra_hd_bluray_movies_pre_order'
+
+# duplicate above to add more scrapers, ex:
+# [[instance]]
+# interval=...
+# ...
