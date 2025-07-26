@@ -33,6 +33,7 @@ class DiscordWebhookNotifier(Notifier):
                         }
                     ]
                 })
+        
         res = self.session.post(self.url, json={
             'username': self.username,
             'content': self.content,

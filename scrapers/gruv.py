@@ -48,7 +48,7 @@ class Gruv(Scraper):
             price = float(price_tag.text.strip('$ \n'))
             title = title_tag.text.strip()
             url = self.base_url + title_tag.attrs.get('href', '/') # /product/...
-            img = 'https' + image_tag.attrs.get('src', '').removeprefix('https:')
+            img = 'https:' + image_tag.attrs.get('src', '').removeprefix('https:')
             found.append({
                 'price': price,
                 'title': title,
